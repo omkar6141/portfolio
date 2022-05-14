@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 5px 1px 5px rgba(0,0,0,0.7);
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: #2a9d8f !important;
+}
+
+.page1{
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header{
+  padding: 2px;
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  text-align: center;
+}
+
+.menu-list{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.menu-list li{
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 0.5px;
+}
+
+.menu-list li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 30px;
+  transition: 0.6s ease;
+  text-align: center;
+}
+
+.menu-list li a:hover{
+  background-color: #d00000;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  transform: scale(1.02);
+  text-shadow: 1px 1px;
+}
+
+.heading{
+  text-align: center;
+  align-items: center;
+}
+
+.heading h1{
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Rampart One', cursive;
+  font-weight: 100;
+  padding: 10px;
+  margin-top: 150px;
+  text-align: center;
+  transition: 0.6s ease;
+}
+
+.heading h1:hover {
+  transform: scale(1.02);
+}
+
+.heading .btn-download{
+  margin-top: 90px;
+  background-color: transparent;
+  border: 3px solid #485461;
+  padding: 8px 14px;
+  border-radius: 4px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+
+}
+
+.btn-download a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+}
+.btn-download a:hover,
+.btn-download:hover {
+  background-color: #fff;
+  color: #293241;
+}
+
+@media screen and (max-width:768px)
+ {
+
+  .header{
+    float: none;
+    display: block;
+  }
+
+  .menu-list li a{
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  .heading h1{
+    font-size: 30px;
+  }
+
+  .btn-download a{
+    font-size: 20px;
+  }
+
+}
+
+/*FIRST SECTION END */
+
+/*SECOND SECTION START */
+
+.page2{
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+
+.about, .hobbies{
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.about h2, .hobbies h2{
+  font-size: 45px;
+}
+
+.about p, .hobbies p{
+  font-size: 25px;
+  padding: 5px;
+}
+
+@media screen and (max-width:1150px)
+ {
+
+   .about h2, .hobbies h2{
+     padding: 5px;
+     margin: 5px;
+   }
+
+   .about p, .hobbies p{
+     font-size: 20px;
+     padding: 5px;
+   }
+
+}
+
+@media screen and (max-width:768px)
+ {
+
+   .about h2, .hobbies h2 {
+     font-size: 25px;
+     padding: 5px;
+     margin: 5px;
+   }
+
+   .about p, .hobbies p{
+     font-size: 20px;
+     padding: 5px;
+   }
+
+}
+
+@media screen and (max-width:576px)
+ {
+
+   .about h2, .hobbies h2 {
+     font-size: 25px;
+     margin: 15px;
+   }
+
+   .about p, .hobbies p{
+     font-size: 15px;
+   }
+
+}
+
+/*SECOND SECTION END */
+
+/*THIRD SECTION START */
+
+.page3{
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+
+.skills, .learning{
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.skills h2, .learning h2{
+  font-size: 45px;
+}
+
+.skills p, .learning p{
+  font-size: 25px;
+  padding: 5px;
+  margin: 40px;
+}
+
+.skills p{
+  border: 2px solid #fff;
+}
+
+.learning p a{
+  color: #fff;
+
+}
+
+@media screen and (max-width:1150px)
+ {
+
+   .skills h2, .learning h2{
+     padding: 5px;
+     margin: 5px;
+   }
+
+   .skills p, .learning p{
+     font-size: 20px;
+     padding: 5px;
+   }
+
+}
+
+@media screen and (max-width:768px)
+ {
+
+   .skills h2, .learning h2{
+     font-size: 25px;
+     padding: 5px;
+     margin: 5px;
+   }
+
+   .skills p, .learning p{
+     font-size: 20px;
+     padding: 5px;
+   }
+
+   .skills p{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-gap: 2px;
+   }
+
+}
+
+@media screen and (max-width:576px)
+ {
+
+   .skills h2, .learning h2{
+     font-size: 25px;
+     margin: 15px;
+   }
+
+   .skills p, .learning p{
+     font-size: 15px;
+   }
+
+   .skills p{
+     border: none;
+     display: grid;
+     grid-template-columns: repeat(4, 2fr);
+     grid-gap: 5px;
+   }
+
+}
+
+
+/*THIRD SECTION END */
+
+/*FOURTH SECTION START */
+
+.page4{
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1150px){
+  .grid{
+    height: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.img1{
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  opacity: 0.5;
+  transition: 0.2s ease-in;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url(qijin-xu.png) no-repeat center center scroll;
+
+}
+
+.img1:hover{
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+
+
+/*FOURTH SECTION START */
+
+.page5{
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-con .left-con {
+  flex: 2;
+}
+.contact-con .left-con h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-con .left-con p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-con .left-con .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 !important;
+  padding: 0 !important;
+}
+.contact-con .left-con .contact-info .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-con .left-con .contact-info .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.contact-con .left-con .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-con .left-con .contact-icon a {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #201d1d63;
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-con .left-con .contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-con .left-con .contact-icon a:hover i {
+  color: var(--color-primary);
+}
+.contact-con .left-con .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
